@@ -1,6 +1,22 @@
 :root {
+    /*Palette*/
+    --absolute-white: #FFFFFF;
     --background-white:  #F9F9F9;
-    --main-font-color: #0A0B0C;
+    --ligth-gold: #DFCA4E;
+    --real-gold: #D4AF37;
+    --blue-logo: #004AAD;
+    --red-logo: #FF1616;
+    --red-carpet: #C32A2A;
+    --orange: #EA2C0B;
+    --absolute-black: #000000;
+    --primary-black: #110E0E;
+    --light-black: #1A1717;
+    --wara-black: #3C3030;
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../fonts/Shrikhand-Regular/Shrikhand-Regular.ttf");
 }
 
 * {
@@ -21,7 +37,45 @@ main {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: var(--background-white);
     align-items: center;
     justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(170deg, var(--red-carpet), var(--light-black), var(--absolute-black));
+}
+
+header .header__a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    text-decoration: none;
+    font-family: "Shrikhand", sans-serif;
+}
+
+header .a__img {
+    height: 60px;
+    background-color: #f9f9f94f;
+    border-radius: 10px;
+}
+
+header .a__div {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 15pt;
+}
+
+header .a__div--Movie {
+    color: var(--blue-logo);
+}
+
+header .a__div--Club {
+    color: var(--red-logo);
+    margin-left: 10px;
 }
