@@ -87,6 +87,9 @@ header .a__div--Club {
 }
 
 header .header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: auto;
     margin-right: 30px;
     color: var(--absolute-white);
@@ -100,7 +103,12 @@ header .header__menu--profile {
 
 .header__menu--img {
     width: 30px;
+    height: 30px;
     margin: 5px;
+    background-image: url("../images/User_profile_void.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header__menu--prof {
@@ -110,7 +118,7 @@ header .header__menu--profile {
     font-size: 1.8rem;
 }
 
-header .header__menu ul {
+header .header__menu .account-container ul {
     position: absolute;
     display: none;
     width: 120px;
@@ -121,8 +129,28 @@ header .header__menu ul {
     border-radius: 5px;
 }
 
-header .header__menu:hover ul, ul:hover {
+header .account-container:hover ul, ul:hover {
     display: block;
+}
+
+.header__menu--profile:hover :first-child {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url("../images/User_profile_filled.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__menu ul:hover  .header__menu--profile :first-child {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url("../images/User_profile_filled.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header .header__menu li {
@@ -135,9 +163,67 @@ header .header__menu li a {
     color: var(--absolute-white);
 }
 
-header .header__menu li a:hover {
+header .header__menu  .account-container li a:hover {
     text-decoration: underline;
     color: var(--light-gold);
+}
+
+.header-menu__searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    margin-right: 5px;
+}
+
+.header-menu__searchbar--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background-color: #EFEFEF;
+    border: solid 2px #DFE1E5;
+    border-radius: 100px;
+}
+
+.header-menu__searchbar--container:hover {
+    box-shadow: 0 2px 6px 0 #bababb47;
+    border-color: #e9eaec11;
+}
+
+.header-menu__searchbar--container span {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    background-image: url("../images/search.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-menu__searchbar--container input {
+    width: 110px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: #EFEFEF;
+}
+
+.header-menu__searchbar--container button {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 3px;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: var(--blue-logo);
+    border: 0px;
+    border-radius: 0px 50px 50px 0px;
+    color: #EFEFEF;
+}
+
+.header-menu__searchbar--container button:hover {
+    background-color: #1f6dd4;
 }
 
 main {
@@ -146,6 +232,5 @@ main {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    /*background-image: linear-gradient(170deg, var(--red-carpet), var(--light-black), var(--absolute-black));*/
-    background-color: var(--absolute-black);
+    background-color: var(--light-black);
 }
