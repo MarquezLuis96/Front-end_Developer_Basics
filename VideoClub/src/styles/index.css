@@ -1,6 +1,32 @@
 :root {
+    /*Palette*/
+    --absolute-white: #FFFFFF;
     --background-white:  #F9F9F9;
-    --main-font-color: #0A0B0C;
+    --light-gold: #DFCA4E;
+    --real-gold: #D4AF37;
+    --blue-logo: #004AAD;
+    --red-logo: #FF1616;
+    --red-carpet: #C32A2A;
+    --orange: #EA2C0B;
+    --absolute-black: #000000;
+    --primary-black: #110E0E;
+    --light-black: #1A1717;
+    --wara-black: #3C3030;
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../fonts/Shrikhand-Regular/Shrikhand-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Mulish-bold";
+    src: url("../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf");
 }
 
 * {
@@ -17,11 +43,278 @@ body {
     font-size: 1.6rem;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 11.5vh;
+    background-image: linear-gradient(170deg, var(--red-carpet), var(--light-black), var(--absolute-black));
+    /*background: linear-gradient(135deg, hsla(0, 65%, 46%, 1) 0%, hsla(0, 50%, 44%, 1) 10%, hsla(0, 0%, 0%, 1) 100%);*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header__a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    text-decoration: none;
+    font-family: "Shrikhand", sans-serif;
+}
+
+header .a__img {
+    height: 60px;
+    padding: 5px;
+    background-color: #f9f9f94f;
+    border-radius: 10px;
+}
+
+header .a__div {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 15pt;
+}
+
+header .a__div--Movie {
+    color: var(--blue-logo);
+    margin-left: 5px;
+}
+
+header .a__div--Club {
+    color: var(--red-logo);
+    margin-left: 10px;
+}
+
+header .header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    margin-right: 30px;
+    color: var(--absolute-white);
+}
+
+header .header__menu--profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__menu--img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url("../images/User_profile_void.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__menu--prof {
+    margin: 5px;
+    font-family: "Mulish-bold", sans-serif;
+    color: var(--absolute-white);
+    font-size: 1.8rem;
+}
+
+header .header__menu .account-container ul {
+    position: absolute;
+    display: none;
+    width: 120px;
+    padding: 10px;
+    list-style: none;
+    text-align: right;
+    background-color: #f9f9f9e5;
+    border-radius: 5px;
+}
+
+header .account-container:hover ul, ul:hover {
+    display: block;
+}
+
+.header__menu--profile:hover :first-child {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url("../images/User_profile_filled.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__menu ul:hover  .header__menu--profile :first-child {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url("../images/User_profile_filled.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .header__menu li {
+    margin: 5px 0px;
+}
+
+header .header__menu li a {
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    color: var(--absolute-black);
+}
+
+header .header__menu  .account-container li a:hover {
+    text-decoration: underline;
+    color: var(--light-gold);
+}
+
+.header-menu__searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    margin-right: 5px;
+}
+
+.header-menu__searchbar--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background-color: #EFEFEF;
+    border: solid 2px #DFE1E5;
+    border-radius: 100px;
+}
+
+.header-menu__searchbar--container:hover {
+    box-shadow: 0 2px 6px 0 #d4d4d47a;
+    border-color: #3e3f3f70;
+}
+
+.header-menu__searchbar--container span {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    background-image: url("../images/search.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-menu__searchbar--container input {
+    width: 110px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: #EFEFEF;
+    font-family: "Mulish", sans-serif;
+}
+
+.header-menu__searchbar--container button {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 3px;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: var(--blue-logo);
+    border: 0px;
+    border-radius: 0px 50px 50px 0px;
+    color: #EFEFEF;
+    font-family: "Mulish", sans-serif;
+}
+
+.header-menu__searchbar--container button:hover {
+    background-color: #1f6dd4;
+}
+
 main {
     display: flex;
     width: 100vw;
-    height: 100vh;
-    background-color: var(--background-white);
+    height: 88.5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--absolute-black);
+}
+
+.cards__container {
+    width: 1150px;
+    height: 550px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--light-black);
+    border-radius: 10px;
+}
+
+.card {
+    width: 75px;
+    height: 105px;
+    margin: 10px;
+    background-color: pink;
+    border: solid 1px #FFFFF;
+}
+
+.card img {
+    width: 75px;
+    height: 105px;
+}
+
+.overposter {
+    position: absolute;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 84%;
+    height: 70%;
+    background-color: #f9f9f993;
+}
+
+.overposter__container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: row;
+    align-self: center;
     align-items: center;
     justify-content: center;
+}
+
+.overposter__container .overposter__container--logo {
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/MovieClub_Logo/MovieClub_Logo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overposter__container .overposter__container--text {
+    display: flex;
+    flex-direction: column;
+}
+
+.overposter__container .overposter__container--text :nth-child(2) {
+    margin-left: 25px;
+}
+
+.overposter__container--text p {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 4.8rem;
+    color: var(--light-black);
+}
+
+.overposter__container--text p .cotufas {
+    color: var(--blue-logo);
+    /*color: var(--red-logo);*/
+}
+
+.overposter__container--text p .peli {
+    color: var(--red-logo);
+    /*color: var(--blue-logo);*/
 }
