@@ -47,8 +47,9 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 80px;
+    height: 11.5vh;
     background-image: linear-gradient(170deg, var(--red-carpet), var(--light-black), var(--absolute-black));
+    /*background: linear-gradient(135deg, hsla(0, 65%, 46%, 1) 0%, hsla(0, 50%, 44%, 1) 10%, hsla(0, 0%, 0%, 1) 100%);*/
     justify-content: space-between;
     align-items: center;
 }
@@ -125,7 +126,7 @@ header .header__menu .account-container ul {
     padding: 10px;
     list-style: none;
     text-align: right;
-    background-color: #f9f9f94f;
+    background-color: #f9f9f9e5;
     border-radius: 5px;
 }
 
@@ -160,7 +161,8 @@ header .header__menu li {
 header .header__menu li a {
     text-decoration: none;
     font-family: "Mulish", sans-serif;
-    color: var(--absolute-white);
+    font-weight: bold;
+    color: var(--absolute-black);
 }
 
 header .header__menu  .account-container li a:hover {
@@ -187,8 +189,8 @@ header .header__menu  .account-container li a:hover {
 }
 
 .header-menu__searchbar--container:hover {
-    box-shadow: 0 2px 6px 0 #bababb47;
-    border-color: #e9eaec11;
+    box-shadow: 0 2px 6px 0 #d4d4d47a;
+    border-color: #3e3f3f70;
 }
 
 .header-menu__searchbar--container span {
@@ -207,6 +209,7 @@ header .header__menu  .account-container li a:hover {
     border: none;
     outline: none;
     background-color: #EFEFEF;
+    font-family: "Mulish", sans-serif;
 }
 
 .header-menu__searchbar--container button {
@@ -220,6 +223,7 @@ header .header__menu  .account-container li a:hover {
     border: 0px;
     border-radius: 0px 50px 50px 0px;
     color: #EFEFEF;
+    font-family: "Mulish", sans-serif;
 }
 
 .header-menu__searchbar--container button:hover {
@@ -229,8 +233,31 @@ header .header__menu  .account-container li a:hover {
 main {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 88.5vh;
     align-items: center;
     justify-content: center;
+    background-color: var(--absolute-black);
+}
+
+.cards__container {
+    width: 95%;
+    height: 95%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: var(--light-black);
+    border-radius: 10px;
+}
+
+.card {
+    width: 75px;
+    height: 105px;
+    border: solid 1px #FFF;
+}
+
+.card img {
+    width: 75px;
+    height: 105px;
 }
