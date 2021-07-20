@@ -204,7 +204,7 @@ header .header__menu  .account-container li a:hover {
 }
 
 .header-menu__searchbar--container input {
-    width: 110px;
+    width: 130px;
     height: 20px;
     border: none;
     outline: none;
@@ -232,7 +232,7 @@ header .header__menu  .account-container li a:hover {
 
 main {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 88.5vh;
     justify-content: center;
     align-items: center;
@@ -256,7 +256,7 @@ main {
     height: 105px;
     margin: 10px;
     background-color: pink;
-    border: solid 1px #FFFFF;
+    border: solid 1px #FFFFFF;
 }
 
 .card img {
@@ -269,8 +269,8 @@ main {
     display: flex;
     align-self: center;
     justify-self: center;
-    width: 84%;
-    height: 70%;
+    width: 1025px;
+    height: 450px;
     background-color: #f9f9f993;
 }
 
@@ -311,10 +311,165 @@ main {
 
 .overposter__container--text p .cotufas {
     color: var(--blue-logo);
-    /*color: var(--red-logo);*/
 }
 
 .overposter__container--text p .peli {
     color: var(--red-logo);
-    /*color: var(--blue-logo);*/
+}
+
+.first-section {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: var(--wara-black);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section .first-section__container {
+    display: flex;
+    width: 1150px;
+    height: 90%;
+    padding: 10px;
+    background-color: var(--light-black);
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.first-section__container .img-container {
+    position: relative;
+    width: 250px;
+    height: 275px;
+    margin: 15px;
+    background-color: #f9f9f96c;
+    border-radius: 10px;
+}
+
+.group {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.group-1 {
+    position: relative;
+}
+
+.group-1 .section-card {
+    background-color: black;
+}
+
+.group-2 {
+    position: absolute;
+    top: 11px;
+    left: 40px;
+}
+
+.group-2 .section-card {
+    background-color: yellow;
+}
+
+.group-3 {
+    position: absolute;
+    top: 25px;
+    left: 65px;
+}
+
+.group-3 .section-card {
+    background-color: magenta;
+}
+
+.section-card {
+    width: 75px;
+    height: 105px;
+    margin: 5px;
+}
+
+.section-searchbar {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.section-searchbar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-searchbar__container h1 {
+    font-family: "Mulish-bold", sans-serif;
+    font-size: 3.5rem;
+    color: var(--real-gold);
+}
+
+.section-searchbar__container p {
+    font-family: "Mulish", sans-serif;
+    font-size: 3rem;
+    color: var(--background-white);
+}
+
+.section-searchbar__container p strong {
+    color: var(--light-gold);
+}
+
+
+.section-searchbar__container--input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background-color: #EFEFEF;
+    border: solid 2px #DFE1E5;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.section-searchbar__container--input:hover {
+    box-shadow: 0 2px 6px 0 #d4d4d47a;
+    border-color: #3e3f3f70;
+}
+
+.section-searchbar__container--input span {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    background-image: url("../images/search.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-searchbar__container--input input {
+    width: 250px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: #EFEFEF;
+    font-family: "Mulish", sans-serif;
+}
+
+.section-searchbar__container--input button {
+    display: flex;
+    align-items: center;
+    height: 29px;
+    margin: 3px;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: var(--blue-logo);
+    border: 0px;
+    border-radius: 0px 50px 50px 0px;
+    color: #EFEFEF;
+    font-family: "Mulish", sans-serif;
+}
+
+.section-searchbar__container--input button:hover {
+    background-color: #1f6dd4;
 }
