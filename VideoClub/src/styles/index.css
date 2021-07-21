@@ -481,3 +481,80 @@ main {
 .section-searchbar__container--input button:hover {
     background-color: #1f6dd4;
 }
+
+.carousell {
+    width: 100%;
+    color: var(--orange);
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+
+.carousell__container--item-container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousell-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: magenta;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousell-item:hover ~ .carousell-item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousell__container--item-container:hover .carousell-item {
+    opacity: 0.3;
+}
+
+.carousell__container--item-container:hover .carousell-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousell-item__details div .play {
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/play-now.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousell-item__details div .watch-later {
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/watch-later.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousell-item img {
+    width: 100%;
+}
+
+.carousell-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 1.6rem;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
