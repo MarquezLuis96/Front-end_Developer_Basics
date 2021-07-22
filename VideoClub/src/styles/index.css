@@ -481,3 +481,178 @@ main {
 .section-searchbar__container--input button:hover {
     background-color: #1f6dd4;
 }
+
+.carousell {
+    width: 100%;
+    /*overflow: scroll;*/
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    background-color: var(--absolute-black);
+}
+
+.carousell__container {
+    width: 1150px;
+    background-color: var(--light-black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousell__container--item-container {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 50px 0px;
+    padding: 25px;
+    background-color: #f9f9f967;
+    border-radius: 10px;
+}
+
+.carousell-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 2.5px;
+    background-color: magenta;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousell-item:hover ~ .carousell-item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousell__container--item-container:hover .carousell-item {
+    opacity: 0.3;
+}
+
+.carousell__container--item-container:hover .carousell-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousell-item img {
+    width: 100%;
+}
+
+.carousell-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 1.6rem;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    display: none;
+    font-family: "Mulish", sans-serif;
+}
+
+.carousell-item:hover .carousell-item__details{
+    display: block;
+}
+
+.carousell-item__details p {
+    width: 90%;
+    color: var(--absolute-white);
+    white-space: normal;
+}
+
+.carousell-item__details .carousell-item__details--title {
+    font-size: 2rem;
+    color: var(--real-gold);
+}
+
+.carousell-item__details .carousell-item__details--sinopsis {
+    font-size: 1rem;
+    color: var(--absolute-white);
+}
+
+.options {
+    padding-top: 10px;
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 150px;
+    background-color: #f9f9f967;
+    border-radius: 10px;
+    transition: 450ms all;
+}
+
+.carousell-item__details .play {
+    display: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/play-now.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+}
+
+.carousell-item__details .watch-later {
+    display: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/watch-later.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 40px;
+}
+
+.carousell-item__details div .watch-later:hover, .carousell-item__details div .play:hover {
+    transition: 450ms all;
+    transform: scale(1.25);
+    transform-origin: center left;
+    margin: 5px;
+}
+
+
+.carousell__text-container h2 {
+    color: var(--real-gold);
+    font-family: "Shrikhand", sans-serif;
+    font-size: 4rem;
+    margin: 30px;
+}
+
+.carousell__text-container p {
+    color: var(--absolute-white);
+    font-family: "Mulish", sans-serif;
+    font-size: 2.5rem;
+    margin: 30px;
+}
+
+.carousell__text-container p :first-child {
+    color: var(--red-logo);
+    font-weight: bold;
+}
+
+.carousell__text-container p :last-child {
+    color: var(--blue-logo);
+    font-weight: bold;
+}
+
+.inside {
+    position: relative;
+    top: 6px;
+    left: 30px;
+    color: var(--background-white);
+}
