@@ -254,8 +254,8 @@ main {
     width: 75px;
     height: 105px;
     margin: 10px;
-    background-color: pink;
-    border: solid 1px #FFFFFF;
+    /*background-color: pink;*/
+    /*border: solid 1px #FFFFFF;*/
 }
 
 .card img {
@@ -365,7 +365,7 @@ main {
     width: 75px;
     height: 105px;
     margin: 5px;
-    background-color: black;
+    /*background-color: black;*/
 }
 
 .group-2 {
@@ -378,7 +378,7 @@ main {
     width: 75px;
     height: 105px;
     margin: 5px;
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 
 .group-3 {
@@ -391,7 +391,7 @@ main {
     width: 75px;
     height: 105px;
     margin: 5px;
-    background-color: magenta;
+    /*background-color: magenta;*/
 }
 
 .section-card img{
@@ -655,4 +655,107 @@ main {
     top: 6px;
     left: 30px;
     color: var(--background-white);
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(135deg, hsla(0, 65%, 46%, 1) 0%, hsla(0, 50%, 44%, 1) 10%, hsla(0, 0%, 0%, 1) 100%);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    margin-left: 60px;
+}
+
+footer .info {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .rights-policy {
+    font-family: "Mulish", sans-serif;
+    color: var(--absolute-white);
+    margin-left: 15px;
+}
+
+footer .rights-policy a {
+    text-decoration: none;
+    color: var(--real-gold);
+}
+
+footer .header__a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    text-decoration: none;
+    font-family: "Shrikhand", sans-serif;
+}
+
+footer .a__img {
+    height: 60px;
+    padding: 5px;
+    background-color: #f9f9f94f;
+    border-radius: 10px;
+}
+
+footer .a__div {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 15pt;
+}
+
+footer .a__div--Movie {
+    color: var(--blue-logo);
+    margin-left: 5px;
+}
+
+footer .a__div--Club {
+    color: var(--red-logo);
+    margin-left: 10px;
+}
+
+footer .right-container .social-networks {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+.social-networks a {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.social-networks .facebook {
+    background-image: url("../images/facebook.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-networks .instagram {
+    background-image: url("../images/instagram.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-networks .twitter {
+    background-image: url("../images/twitter.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
