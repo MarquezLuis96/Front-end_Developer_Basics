@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="./src/images/MovieClub_Logo/MovieClub_Logo.ico"/>
+        <link rel="shorcut icon" type="image/ico" href="./src/images/MovieClub_Logo/MovieClub_Logo.ico"/>
+        <title>MovieClub - Login</title>
+        <link type="text/css" rel="stylesheet" href="./src/styles/login.css"/>
+    </head>
+
+    <body>
+        <header>
+            <a class="header__a" href="./index.html">
+                <img class="a__img" src="./src/images/MovieClub_Logo/MovieClub_Logo.png" alt="MovieClub Logo">
+                <div class="a__div">
+                    <span class="a__div--Movie">Movie</span>
+                    <span class="a__div--Club">Club</span>
+                </div>
+            </a>
+        </header>
+
+        <main>
+            <section class="login">
+                <section class="login__container">
+                    <h2>Inicia Sesion</h2>
+                    <form class="login__container--form">
+                        <input class="input" type="text" placeholder="Correo">
+                        <input class="input" type="password" placeholder="Contraseña">
+                        <button class="button">Iniciar sesión</button>
+                        <div class="login__container--remember-me">
+                            <label>
+                                <div class="remember-me__item">
+                                    <input type="checkbox" name="" id="cbox1" value="checkbox"/>
+                                    <p class="rememberme--text">Recuérdame</p>
+                                </div>
+                            </label>
+                            <a href="./login.html">Olvidé mi usuario/contraseña</a>
+                        </div>
+                    </form>
+
+                    <section class="login__container--social-media">
+                        <div class="login__social-media--container">
+                            <div class="login__container__social-media--google">
+                                <img src="./src/images/google-login.png" alt="Google-login Logo">
+                                <span class="social-media__name">Inicia sesión con Google</span>
+                            </div>
+
+                            <div class="login__container__social-media--facebook">
+                                <img src="./src/images/facebook-login.png" alt="facebook-login Logo">
+                                <span class="social-media__name">Inicia sesión con Facebook</span>
+                            </div>
+
+                            <div class="login__container__social-media--twitter">
+                                <img src="./src/images/twitter-login.png" alt="twitter-login Logo">
+                                <span class="social-media__name">Inicia sesión con Twitter</span>
+                            </div>
+                        </div>
+                    </section>
+                    <p class="login__container--register">¿No tienes ninguna cuenta? <a href="./login.html">Regístrate</a></p>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer__container">
+                <div class="left-container">
+                    <div class="info">
+                        <div class="logo-container">
+                            <a class="header__a" href="./index.html">
+                                <img class="a__img" src="./src/images/MovieClub_Logo/MovieClub_Logo.png" alt="MovieClub Logo">
+                                <div class="a__div">
+                                    <span class="a__div--Movie">Movie</span>
+                                    <span class="a__div--Club">Club</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rights-policy">
+                            <p>Todos los derechos reservados</p>
+                            <p>Política de privacidad <a href="./index.html">aquí</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-container">
+                    <div class="social-networks">
+                        <a href="./index.html" class="facebook"></a>
+                        <a href="./index.html" class="instagram"></a>
+                        <a href="./index.html" class="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
