@@ -1,0 +1,56 @@
+$y : yellow;
+$m : magenta;
+$c : cyan;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card($color, $size, $border) {
+    @extend .col-flex;
+    background-color: $color;
+    width: $size;
+    height: auto;
+    border-radius: $border;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $y;
+    @extend .row-flex;
+}
+
+section {
+    background-color: $m;
+    @include card($m, 250px, 10px);
+    padding: 10px;
+    margin: 5px;
+}
+
+aside {
+    @include card($c, 150px, 5px);
+    padding: 5px;
+    margin: 2px;
+}
